@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script type="text/javascript" src="intereses.js"></script>
 </head>
 <nav>
     <a href="index.html">.calculadora</a>
@@ -33,13 +34,7 @@
         </label>
     </div>
 
-    <div class="toggler">
-        <button class="red">-</button>
-        <label>períodos</label>
-        <button class="green">+</button>
-    </div>
-
-    <div class="formulario2">
+    <div class="formulario2" id="f2" style="display:none">
         <label class="customInput">
             <input type="tel" id="tasa" placeholder="Tasa%" required>
             <span class="fixedPlaceholder"></span>
@@ -49,7 +44,7 @@
             <span class="fixedPlaceholder"></span>
         </label>
     </div>
-    <div class="formulario3">
+    <div class="formulario3" id="f3" style="display:none">
         <label class="customInput">
             <input type="tel" id="tasa" placeholder="Tasa%" required>
             <span class="fixedPlaceholder"></span>
@@ -58,6 +53,11 @@
             <input type="date" id="fechaCorte3" required>
             <span class="fixedPlaceholder"></span>
         </label>
+    </div>
+    <div class="toggler">
+        <button class="red" onclick="toggleDown()">-</button>
+        <label>períodos</label>
+        <button class="green" onclick="toggleUp()">+</button>
     </div>
     <div class="botones">
         <button class="green">Calcular</button>

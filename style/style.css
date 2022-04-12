@@ -87,14 +87,6 @@ body .calculadora .red:hover {
   background-color: #ef7f96;
 }
 
-body .calculadora .formulario2 {
-  display: none;
-}
-
-body .calculadora .formulario3 {
-  display: none;
-}
-
 body .calculadora .toggler {
   width: 90%;
   margin-left: 1.5vh;
@@ -111,6 +103,7 @@ body .calculadora .toggler {
 
 body .calculadora .toggler button {
   color: #3a3a3a;
+  text-align: center;
 }
 
 body .calculadora .toggler label {
