@@ -85,12 +85,6 @@ body {
         .red:hover {
             background-color: $coolRed;
         }
-        .formulario2 {
-            display:none;
-        }
-        .formulario3 {
-            display:none;
-        }
         .toggler {
             width: 90%;
             margin-left: 1.5vh;
@@ -100,6 +94,7 @@ body {
             font-size: 5vh;
             button {
                 color:rgb(58, 58, 58);
+                text-align: center;
             }
             label {
                 color:#aaa;
