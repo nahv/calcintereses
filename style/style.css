@@ -79,11 +79,11 @@ body .calculadora button {
   text-align: center;
 }
 
-body .calculadora .green:hover {
+body .calculadora .green:active {
   background-color: #53ca82;
 }
 
-body .calculadora .red:hover {
+body .calculadora .red:active {
   background-color: #ef7f96;
 }
 
