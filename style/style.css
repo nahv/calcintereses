@@ -113,4 +113,12 @@ body .calculadora .toggler label {
       align-self: center;
   margin-left: 4vh;
 }
+
+body .calculadora .resultado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 6vh;
+  font-size: 5vh;
+}
 /*# sourceMappingURL=style.css.map */

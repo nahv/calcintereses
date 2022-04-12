@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script type="text/javascript" src="intereses.js"></script>
+    <script type="text/javascript" src="formatoNumero.js"></script>
 </head>
 <nav>
     <a href="index.html">.calculadora</a>
@@ -21,36 +22,36 @@
             <span class="fixedPlaceholder"></span>
         </label>
         <label class="customInput">
-            <input type="date" id="fechaInicio" placeholder="Fecha Inicio" required>
+            <input type="date" id="fechaInicio" placeholder="Fecha Inicio" value="2000-01-01" required>
             <span class="fixedPlaceholder"></span>
         </label>
         <label class="customInput">
-            <input type="tel" id="tasa" placeholder="Tasa%" required>
+            <input type="tel" id="tasa1" placeholder="Tasa%" required>
             <span class="fixedPlaceholder"></span>
         </label>
         <label class="customInput">
-            <input type="date" id="fechaCorte1" required>
+            <input type="date" id="fechaCorte1" value="2010-01-01" required>
             <span class="fixedPlaceholder"></span>
         </label>
     </div>
 
     <div class="formulario2" id="f2" style="display:none">
         <label class="customInput">
-            <input type="tel" id="tasa" placeholder="Tasa%" required>
+            <input type="tel" id="tasa2" placeholder="Tasa%" required>
             <span class="fixedPlaceholder"></span>
         </label>
         <label class="customInput">
-            <input type="date" id="fechaCorte2" required>
+            <input type="date" id="fechaCorte2" value="2015-01-01" required>
             <span class="fixedPlaceholder"></span>
         </label>
     </div>
     <div class="formulario3" id="f3" style="display:none">
         <label class="customInput">
-            <input type="tel" id="tasa" placeholder="Tasa%" required>
+            <input type="tel" id="tasa3" placeholder="Tasa%" required>
             <span class="fixedPlaceholder"></span>
         </label>
         <label class="customInput">
-            <input type="date" id="fechaCorte3" required>
+            <input type="date" id="fechaCorte3" value="2020-01-01" required>
             <span class="fixedPlaceholder"></span>
         </label>
     </div>
@@ -60,10 +61,11 @@
         <button class="green" onclick="toggleUp()">+</button>
     </div>
     <div class="botones">
-        <button class="green">Calcular</button>
+        <button class="green" onclick="calcular()">Calcular</button>
         <button class="red">Borrar</button>
     </div>
+    <div class='resultado'><p id="resultado"></p></div>
 </div>
-<div class='resultado'></div>
+
 </body>
 </html>
