@@ -36,6 +36,7 @@ function calcular() {
         ${tiempo.toFixed(2)} meses | ${(tiempo*30).toFixed(0)} días.<br>
         Interés: $ ${formatter.format(interes)} | ${incremento.toFixed(2)} % <br>
         <b>TOTAL:</b> $ ${total}`
+        document.getElementById('resultado').scrollIntoView();
         return
     }
     if (f3style === "none") {
@@ -67,6 +68,7 @@ function calcular() {
   Interés: ${(incremento1+incremento2).toFixed(2)} % | ${((tiempo1+tiempo2)*30).toFixed(0)} días. | $ ${formatter.format(interesTotal)} <br>
   ${(tiempo1+tiempo2).toFixed(2)} meses. <br> 
   Total: <b>$ ${total}</b> (capital + intereses) <br>`
+  document.getElementById('resultado').scrollIntoView();
   return
     }
     else {
@@ -107,5 +109,6 @@ function calcular() {
       Interés: ${(incremento1+incremento2+incremento3).toFixed(2)} % | ${((tiempo1+tiempo2+tiempo3)*30).toFixed(0)} días | $ ${formatter.format(interesTotal)}.<br>
       ${(tiempo1+tiempo2+tiempo3).toFixed(2)} meses. <br>
       Total: <b>$${total}</b> (capital + intereses) <br>`
+      document.getElementById('resultado').scrollIntoView();
     }
 }
