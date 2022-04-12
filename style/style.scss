@@ -7,21 +7,23 @@ $coolRed: #ef7f96;
 $Roboto: 'Roboto Condensed', sans-serif;
 $Cabin: 'Cabin', sans-serif;
 
-//Mixins
+//Mixins ands keyframes
 @mixin flexCenter() {
     display: flex;
     align-content: center;
     justify-content: center;
 }
-
 @keyframes displayDownToUp {
     0% {transform: translateY(100%);}
     100% {transform: translateY(0%);}
 }
-
 @keyframes displayUpToDown {
     0% {transform: translateY(-100%);}
     100% {transform: translateY(0%);}
+}
+@keyframes displayLeftToRight {
+	0% {transform: translateX(-100%);}
+ 	100% {transform: translateX(0%);}
 }
 
 //Style
@@ -126,5 +128,18 @@ body {
         font-size: 5vh;
         }  
     }
+.signature {
+    animation: .7s displayLeftToRight;
+    background-color: $boxColor;
+    font-family: $Roboto;
+    width: 100%;
+    margin-top: 25vh;
+    text-align: center;
+    font-size: 3.5vh;
+    a {
+        text-decoration: inherit;
+        color:#111;
+    }
+}
 }
 

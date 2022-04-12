@@ -42,6 +42,28 @@
   }
 }
 
+@-webkit-keyframes displayLeftToRight {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes displayLeftToRight {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
 nav {
   font-family: "Roboto Condensed", sans-serif;
   background: #111;
@@ -177,5 +199,21 @@ body .calculadora .resultado {
   display: flex;
   margin-left: 6vh;
   font-size: 5vh;
+}
+
+body .signature {
+  -webkit-animation: .7s displayLeftToRight;
+          animation: .7s displayLeftToRight;
+  background-color: #b9dbff;
+  font-family: "Roboto Condensed", sans-serif;
+  width: 100%;
+  margin-top: 25vh;
+  text-align: center;
+  font-size: 3.5vh;
+}
+
+body .signature a {
+  text-decoration: inherit;
+  color: #111;
 }
 /*# sourceMappingURL=style.css.map */
