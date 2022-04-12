@@ -14,6 +14,16 @@ $Cabin: 'Cabin', sans-serif;
     justify-content: center;
 }
 
+@keyframes displayDownToUp {
+    0% {transform: translateY(100%);}
+    100% {transform: translateY(0%);}
+}
+
+@keyframes displayUpToDown {
+    0% {transform: translateY(-100%);}
+    100% {transform: translateY(0%);}
+}
+
 //Style
 nav {
     font-family: $Roboto;
@@ -46,6 +56,7 @@ body {
         margin-left: 11vh;
     }
     .calculadora {
+        animation: .7s displayUpToDown;
         background-color: $boxColor;
         width: 100%;
         height: 65vh;
@@ -85,6 +96,12 @@ body {
         .red:active {
             background-color: $coolRed;
         }
+        .formulario2 {
+            animation: .7s displayUpToDown;
+        }
+        .formulario3 {
+            animation: .7s displayUpToDown;
+        }
         .toggler {
             width: 90%;
             margin-left: 1.5vh;
@@ -103,10 +120,11 @@ body {
             }
         }
     .resultado {
-       display: flex;
-       margin-left: 6vh;
-       font-size: 5vh;
-    }
+        animation: .7s displayUpToDown;
+        display: flex;
+        margin-left: 6vh;
+        font-size: 5vh;
+        }  
     }
 }
 
