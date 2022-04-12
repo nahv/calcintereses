@@ -76,6 +76,9 @@ body {
             background: lightgrey;
             border-radius: .5vh;
             padding: 1vh;
+            #date {
+                text-align: right;
+            }
         }
         .botones {
             margin-top: 1.5vh;
@@ -84,9 +87,9 @@ body {
             padding: 1vh;
             background-color: #aaa;
             width: 90%;
-            margin-left: 4vh;
-            font-family: $Cabin;
-            font-size: 6vh;
+            margin-left: 3.1vh;
+            font-family: $Roboto;
+            font-size: 4.5vh;
             letter-spacing: .75vh;
             border: none;
             border-radius: .5vh;
@@ -124,8 +127,8 @@ body {
     .resultado {
         animation: .7s displayUpToDown;
         display: flex;
-        margin-left: 6vh;
-        font-size: 5vh;
+        margin-left: 4.5vh;
+        font-size: 4.5vh;
         }  
     }
 .signature {
