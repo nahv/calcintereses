@@ -66,9 +66,9 @@ body {
             width: 90%;
             margin-left: 2vh;
             height: 10vh;
-            font-family: $Cabin;
+            font-family: $Roboto;
             font-size: 3.5vh;
-            text-align: right;
+            text-align: center;
             letter-spacing: 1.5px;
             border: none;
             appearance: none;
@@ -77,7 +77,7 @@ body {
             border-radius: .5vh;
             padding: 1vh;
             #date {
-                text-align: right;
+                text-align: center;
             }
         }
         .botones {
@@ -89,7 +89,7 @@ body {
             width: 90%;
             margin-left: 3.1vh;
             font-family: $Roboto;
-            font-size: 4.5vh;
+            font-size: 5.5vh;
             letter-spacing: .75vh;
             border: none;
             border-radius: .5vh;
@@ -113,6 +113,7 @@ body {
             margin-top: 1.5vh;
             display: flex;
             flex-direction: row;
+            font-family: $Roboto;
             font-size: 5vh;
             button {
                 color:rgb(58, 58, 58);

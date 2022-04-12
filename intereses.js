@@ -33,7 +33,7 @@ function calcular() {
         `Capital: $ ${formatter.format(capital)}<br>
         <p style="font-size:2vh; margin-bottom:1vh">(desde el ${document.getElementById("fechaInicio").value.split("-").reverse().join("-")} 
         hasta el ${document.getElementById("fechaCorte1").value.split("-").reverse().join("-")} al ${document.getElementById("tasa1").value}% mensual)</p>
-        ${tiempo.toFixed(2)} meses | ${(tiempo*30).toFixed(0)} días.<br>
+        ${tiempo.toFixed(2)} meses | ${(tiempo*30).toFixed(0)} días<br>
         Interés: $ ${formatter.format(interes)} | ${incremento.toFixed(2)} % <br>
         <b>TOTAL:</b> $ ${total}`
         document.getElementById('resultado').scrollIntoView();
@@ -54,18 +54,18 @@ function calcular() {
 	let total = formatter.format(parseFloat(capital) + parseFloat(interesTotal));
 	document.getElementById("resultado").innerHTML = 
   `1er período 
-  <p style="font-size:2vh; margin-bottom:-6vh">(desde el ${document.getElementById("fechaInicio").value.split("-").reverse().join("-")} 
+  <p style="font-size:2vh; margin-bottom:-6vh; margin-top:0vh">(desde el ${document.getElementById("fechaInicio").value.split("-").reverse().join("-")} 
   				hasta el ${document.getElementById("fechaCorte1").value.split("-").reverse().join("-")} al ${document.getElementById("tasa1").value}% mensual)</p> <br>
-  Interés: ${incremento1.toFixed(2)} % | ${parseInt(tiempo1*30)} días | $ ${formatter.format(interes1)}.<br>
+  Interés: ${incremento1.toFixed(2)} % | ${parseInt(tiempo1*30)} días |<br> $ ${formatter.format(interes1)}.<br>
   <br>
   2do período 
-  <p style="font-size:2vh; margin-bottom:-6vh">(desde el ${document.getElementById("fechaCorte1").value.split("-").reverse().join("-")} 
+  <p style="font-size:2vh; margin-bottom:-6vh; margin-top:0vh">(desde el ${document.getElementById("fechaCorte1").value.split("-").reverse().join("-")} 
   				hasta el ${document.getElementById("fechaCorte2").value.split("-").reverse().join("-")} al ${document.getElementById("tasa2").value}% mensual)</p><br>
-  Interés: ${incremento2.toFixed(2)} % | ${parseInt(tiempo2*30)} días | $ ${formatter.format(interes2)}.<br>
+  Interés: ${incremento2.toFixed(2)} % | ${parseInt(tiempo2*30)} días |<br> $ ${formatter.format(interes2)}.<br>
   <br>
   <b>TOTAL</b> <br>
   Capital: $ ${formatter.format(capital)} <br>
-  Interés: ${(incremento1+incremento2).toFixed(2)} % | ${((tiempo1+tiempo2)*30).toFixed(0)} días. | $ ${formatter.format(interesTotal)} <br>
+  Interés: ${(incremento1+incremento2).toFixed(2)} % | ${((tiempo1+tiempo2)*30).toFixed(0)} días | $ ${formatter.format(interesTotal)} <br>
   ${(tiempo1+tiempo2).toFixed(2)} meses. <br> 
   Total: <b>$ ${total}</b> (capital + intereses) <br>`
   document.getElementById('resultado').scrollIntoView();
@@ -90,19 +90,19 @@ function calcular() {
         let total = formatter.format(parseFloat(capital) + parseFloat(interesTotal));
         document.getElementById("resultado").innerHTML = 
       `1er período 
-      <p style="font-size:2vh; margin-bottom:-6vh">(desde el ${document.getElementById("fechaInicio").value.split("-").reverse().join("-")}
+      <p style="font-size:2vh; margin-bottom:-6vh; margin-top:0vh">(desde el ${document.getElementById("fechaInicio").value.split("-").reverse().join("-")}
       hasta el ${document.getElementById("fechaCorte1").value.split("-").reverse().join("-")} al ${document.getElementById("tasa1").value}% mensual)</p><br>
-      Interés: ${incremento1.toFixed(2)} % | ${parseInt(tiempo1*30)} días | $ ${formatter.format(interes1)}.<br>
+      Interés: ${incremento1.toFixed(2)} % | ${parseInt(tiempo1*30)} días |<br> $ ${formatter.format(interes1)}.<br>
       <br>
       2do período 
-      <p style="font-size:2vh; margin-bottom:-6vh">(desde el ${document.getElementById("fechaCorte1").value.split("-").reverse().join("-")} 
+      <p style="font-size:2vh; margin-bottom:-6vh; margin-top:0vh">(desde el ${document.getElementById("fechaCorte1").value.split("-").reverse().join("-")} 
                       hasta el ${document.getElementById("fechaCorte2").value.split("-").reverse().join("-")} al ${document.getElementById("tasa2").value}% mensual)</p><br>
-      Interés: ${incremento2.toFixed(2)} % | ${parseInt(tiempo2*30)} días | $ ${formatter.format(interes2)}.<br>
+      Interés: ${incremento2.toFixed(2)} % | ${parseInt(tiempo2*30)} días |<br> $ ${formatter.format(interes2)}.<br>
       <br>
       3er período 
-      <p style="font-size:2vh; margin-bottom:-6vh">(desde el ${document.getElementById("fechaCorte2").value.split("-").reverse().join("-")} 
+      <p style="font-size:2vh; margin-bottom:-6vh; margin-top:0vh">(desde el ${document.getElementById("fechaCorte2").value.split("-").reverse().join("-")} 
                       hasta el ${document.getElementById("fechaCorte3").value.split("-").reverse().join("-")} al ${document.getElementById("tasa3").value}% mensual)</p><br>
-      Interés: ${incremento3.toFixed(2)} % | ${parseInt(tiempo3*30)} días | $ ${formatter.format(interes3)}.<br>
+      Interés: ${incremento3.toFixed(2)} % | ${parseInt(tiempo3*30)} días |<br> $ ${formatter.format(interes3)}.<br>
       <br>
       <b>TOTAL</b> <br>
       Capital: $ ${formatter.format(capital)} <br>
