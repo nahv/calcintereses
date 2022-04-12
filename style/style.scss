@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Roboto+Condensed:wght@300&display=swap');
+//Colors and fonts
+$baseColor: #b2d7ff;
+$boxColor: #b9dbff;
+$coolGreen: #53ca82;
+$coolRed: #ef7f96;
+$Roboto: 'Roboto Condensed', sans-serif;
+$Cabin: 'Cabin', sans-serif;
+
+//Mixins
+@mixin flexCenter() {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+//Style
+nav {
+    font-family: $Roboto;
+    background: #111;
+    display: flex;
+    justify-content: flex-end;
+ 	margin-top: -10px;
+ 	margin-left: -10px;
+	margin: -10px;
+    height: 10vh;
+    a {
+        color: white;
+        text-decoration: inherit;
+        padding: 2vh;
+        font-size: 5vh;
+        letter-spacing: 1.5px;
+        }
+     a:hover {
+            color: #222;
+            background-color: #b2d7ff;
+            font-weight: bold;
+        }
+}
+
+body {
+    background-color: $baseColor;
+    font-family: $Cabin;
+    h1 {
+        font-size: 3.5vh;
+        margin-left: 11vh;
+    }
+    .calculadora {
+        background-color: $boxColor;
+        width: 100%;
+        height: 65vh;
+        input {
+            width: 90%;
+            margin-left: 3vh;
+            height: 10vh;
+            font-family: $Cabin;
+            font-size: 3.5vh;
+            text-align: right;
+            letter-spacing: 1.5px;
+            border: none;
+            appearance: none;
+            outline:  none;
+            background: lightgrey;
+            border-radius: .5vh;
+            padding: 1vh;
+        }
+        .botones {
+            margin-top: 1.5vh;
+        }
+        button {
+            padding: 1vh;
+            background-color: #aaa;
+            width: 90%;
+            margin-left: 4vh;
+            font-family: $Cabin;
+            font-size: 6vh;
+            letter-spacing: .75vh;
+            border: none;
+            border-radius: .5vh;
+            text-align: center;
+        }
+        .green:hover {
+            background-color: $coolGreen;
+        }
+        .red:hover {
+            background-color: $coolRed;
+        }
+        .formulario2 {
+            display:none;
+        }
+        .formulario3 {
+            display:none;
+        }
+        .toggler {
+            width: 90%;
+            margin-left: 1.5vh;
+            margin-top: 1.5vh;
+            display: flex;
+            flex-direction: row;
+            font-size: 5vh;
+            button {
+                color:rgb(58, 58, 58);
+            }
+            label {
+                color:#aaa;
+                align-self: center;
+                margin-left: 4vh;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Roboto+Condensed:wght@300&display=swap");
+nav {
+  font-family: "Roboto Condensed", sans-serif;
+  background: #111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin: -10px;
+  height: 10vh;
+}
+
+nav a {
+  color: white;
+  text-decoration: inherit;
+  padding: 2vh;
+  font-size: 5vh;
+  letter-spacing: 1.5px;
+}
+
+nav a:hover {
+  color: #222;
+  background-color: #b2d7ff;
+  font-weight: bold;
+}
+
+body {
+  background-color: #b2d7ff;
+  font-family: "Cabin", sans-serif;
+}
+
+body h1 {
+  font-size: 3.5vh;
+  margin-left: 11vh;
+}
+
+body .calculadora {
+  background-color: #b9dbff;
+  width: 100%;
+  height: 65vh;
+}
+
+body .calculadora input {
+  width: 90%;
+  margin-left: 3vh;
+  height: 10vh;
+  font-family: "Cabin", sans-serif;
+  font-size: 3.5vh;
+  text-align: right;
+  letter-spacing: 1.5px;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  background: lightgrey;
+  border-radius: .5vh;
+  padding: 1vh;
+}
+
+body .calculadora .botones {
+  margin-top: 1.5vh;
+}
+
+body .calculadora button {
+  padding: 1vh;
+  background-color: #aaa;
+  width: 90%;
+  margin-left: 4vh;
+  font-family: "Cabin", sans-serif;
+  font-size: 6vh;
+  letter-spacing: .75vh;
+  border: none;
+  border-radius: .5vh;
+  text-align: center;
+}
+
+body .calculadora .green:hover {
+  background-color: #53ca82;
+}
+
+body .calculadora .red:hover {
+  background-color: #ef7f96;
+}
+
+body .calculadora .formulario2 {
+  display: none;
+}
+
+body .calculadora .formulario3 {
+  display: none;
+}
+
+body .calculadora .toggler {
+  width: 90%;
+  margin-left: 1.5vh;
+  margin-top: 1.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 5vh;
+}
+
+body .calculadora .toggler button {
+  color: #3a3a3a;
+}
+
+body .calculadora .toggler label {
+  color: #aaa;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 4vh;
+}
+/*# sourceMappingURL=style.css.map */
