@@ -207,8 +207,8 @@ body .calculadora .resultado {
 }
 
 body .signature {
-  -webkit-animation: .7s displayLeftToRight;
-          animation: .7s displayLeftToRight;
+  -webkit-animation: 0.7s displayLeftToRight cubic-bezier(0.87, 1.55, 0.53, 1.23);
+          animation: 0.7s displayLeftToRight cubic-bezier(0.87, 1.55, 0.53, 1.23);
   background-color: #b9dbff;
   font-family: "Roboto Condensed", sans-serif;
   width: 100%;
