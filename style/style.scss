@@ -25,7 +25,9 @@ $Cabin: 'Cabin', sans-serif;
 	0% {transform: translateX(-100%);}
  	100% {transform: translateX(0%);}
 }
-
+* {
+    box-sizing: border-box;
+  }
 //Style
 nav {
     font-family: $Roboto;
@@ -95,10 +97,10 @@ body {
             border-radius: .5vh;
             text-align: center;
         }
-        .green:active {
+        .green:hover {
             background-color: $coolGreen;
         }
-        .red:active {
+        .red:hover {
             background-color: $coolRed;
         }
         .formulario2 {
@@ -145,5 +147,30 @@ body {
         color:#111;
     }
 }
+}
+
+@media screen and (min-width: 992px) {
+   nav {
+       height: 7vh;
+       a {
+       font-size: 1.4em;
+    }
+}
+   body .calculadora {
+       width: 30%;
+       margin-top: 1.5rem;
+       margin-bottom: 10rem;
+       button {
+           font-size: 1.1rem;
+           font-weight: bold;
+       }
+       .resultado {
+           position: relative;
+        transform: translate(25rem, -25rem);
+       }
+   }
+   body .signature {
+      border-radius: 500%;
+   }
 }
 
